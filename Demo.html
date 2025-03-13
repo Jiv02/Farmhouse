@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Farmhouse Landing Page</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 </head>
 <body class="font-sans bg-gray-100">
 
@@ -15,7 +20,7 @@
 
 <nav class="bg-white border-gray-500 dark:bg-gray-900">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <a href="./Demo.html" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="./Resources/The-Farmhouse-Logo3.png"  class="h-16 w-19" alt="Flowbite Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
       </a>
@@ -28,22 +33,22 @@
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           <li>
-            <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+            <a href="#home" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+            <a href="#services" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
+            <a href="#about" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gallery</a>
+            <a href="#gallery" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gallery</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Testmonial</a>
+            <a href="#testmonial" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Testmonial</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+            <a href="#contact" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
           </li>
         </ul>
       </div>
@@ -53,7 +58,7 @@
 
 
   <!-- Hero Section -->
-  <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image:url(./Resources/FARM-1.jpg);">
+  <section id="home" class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image:url(./Resources/FARM-1.jpg);">
     <div class="absolute inset-0 bg-black opacity-50"></div>
     <div class="relative text-center text-white">
       <h1 class="text-5xl font-bold mb-4">Welcome to Our Farmhouse</h1>
@@ -62,11 +67,12 @@
     </div>
   </section>
 
-
 <!-- Services -->
-<div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+<div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16" id="services">
+  <h2 id="#services" class="text-3xl font-bold text-center mb-8">Our servicies</h2>
     
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
+    
 
       <!-- CARD 1 -->
       <div class="rounded overflow-hidden shadow-lg flex flex-col">
@@ -228,7 +234,7 @@
 
 
    <!-- About Section -->
-   <section id="about" class="py-16 px-4">
+   <section class="py-16 px-4" id="about">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
       <!-- Image on the Left -->
       <div class="w-full md:w-1/2">
@@ -250,7 +256,7 @@
 
 
   <!-- Gallery Section -->
-  <section class="py-16 px-4 bg-gray-50">
+  <section class="py-16 px-4 bg-gray-50" id="gallery">
     <h2 class="text-3xl font-bold text-center mb-8">Gallery</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
       <img src="./Resources/farmhouse_interior.png" alt="Farmhouse Image 1" class="rounded-lg shadow-lg">
@@ -303,7 +309,7 @@
 </head>
 <div class="max-w-6xl mx-auto p-6">
   <!-- Title -->
-  <div class="text-center mb-6">
+  <div class="text-center mb-6" id="testmonial">
     <h1 class="text-3xl font-bold">Testimonial</h1>
   </div>
 
@@ -416,7 +422,7 @@
 
   <!-- Contact Section start-->
      <!-- Contact Section -->
-  <section class="py-16 px-4">
+  <section class="py-16 px-4" id="contact">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
       <form class="bg-white p-8 rounded-lg shadow-md">
@@ -431,6 +437,18 @@
         <div class="mb-4">
           <label for="mobilenum" class="block text-gray-700">Mobile Number</label>
           <input type="tel" id="mobilenum" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+        </div>
+        <div class="mb-4">
+          <label for="services" class="block text-gray-700">Choose Services</label>
+          <select id="services" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+            <option value="select">Select Service</option>
+            <option value="destination-weddings">Destination Weddings</option>
+            <option value="reunion-parties">Reunion Parties</option>
+            <option value="weekend-getaways">Weekend Getaways</option>
+            <option value="corporate-retreats">Corporate Retreats</option>
+            <option value="wellness-retreats">Wellness Retreats</option>
+            <option value="music-cultural-events">Music & Cultural Events</option>
+          </select>
         </div>
         <div class="mb-4">
           <label for="message" class="block text-gray-700">Message</label>
@@ -476,5 +494,15 @@
 </footer>
 
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.querySelector('[data-collapse-toggle]');
+    const navbar = document.getElementById('navbar-default');
+
+    toggleButton.addEventListener('click', function() {
+      navbar.classList.toggle('hidden');
+    });
+  });
+</script>
 </body>
 </html>
