@@ -3,7 +3,7 @@
 
 A beautiful, responsive landing page for a farmhouse retreat, built with **HTML, CSS, and Tailwind CSS**. Perfect for showcasing a countryside getaway with a clean, modern design.
 
-![Farmhouse Landing Page Preview](https://via.placeholder.com/800x500) *(Replace with actual screenshot)*
+https://beautiful-fudge-599537.netlify.app/
 
 ## ✨ Features
 
@@ -11,7 +11,7 @@ A beautiful, responsive landing page for a farmhouse retreat, built with **HTML,
 - **Modern UI**: Clean layout with Tailwind CSS styling.
 - **Interactive Elements**:
   - Smooth scrolling navigation.
-  - Inquiry Now button (links to contact form).
+  - Use the inquiry Now button (links to contact form).
   - Hover effects on buttons and images.
 - **Sections**:
   - Hero section with call-to-action.
