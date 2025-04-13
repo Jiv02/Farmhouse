@@ -4,6 +4,10 @@ A beautiful, responsive landing page for a countryside retreat, built with **HTM
 
 **Live Demo:** [https://beautiful-fudge-599537.netlify.app/](https://beautiful-fudge-599537.netlify.app/)  
 
+## 📸 UI Showcase  
+[![Desktop View](https://drive.google.com/file/d/1ijX0MjGwV6HCny99i_f9YsH1lHXcYRAg/view?usp=drive_link)](https://drive.google.com/file/d/1ijX0MjGwV6HCny99i_f9YsH1lHXcYRAg/view?usp=drive_link)  
+
+
 ---
 
 ## ✨ Features  
